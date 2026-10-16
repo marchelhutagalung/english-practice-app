@@ -22,7 +22,7 @@ const FREE_SIZE = 10;
 export function KidHome({ profile, onStart, onBack }: { profile: Profile; onStart: (s: SessionSpec) => void; onBack: () => void }) {
   const content = useContent();
   const [sets, setSets] = useState<PracticeSet[]>([]);
-  const [dueIds, setDueIds] = useState<string[]>([]);
+  const [dueIds, setDueIds] = useState<string[] | null>(null);
   const [streak, setStreak] = useState(0);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export function KidHome({ profile, onStart, onBack }: { profile: Profile; onStar
     void answersForProfile(profile.id).then((a) => setStreak(streakDays(a.map((x) => x.answered_at), Date.now())));
   }, [profile.id]);
 
-  const reviewIds = dueIds.filter((id) => content.questionById.has(id));
+  const reviewIds = (dueIds ?? []).filter((id) => content.questionById.has(id));
 
   const startSet = (set: PracticeSet) => {
     const qs = buildSetQuestions(set, content.questions, content.competitions);
@@ -113,7 +113,7 @@ export function KidHome({ profile, onStart, onBack }: { profile: Profile; onStar
       <section>
         <h2 class="section-title">🔁 Review mistakes</h2>
         <button class="btn big review-btn" disabled={reviewIds.length === 0} onClick={startReview}>
-          {reviewIds.length === 0 ? 'Nothing to review — great!' : `Review ${Math.min(reviewIds.length, REVIEW_SIZE)} question${reviewIds.length === 1 ? '' : 's'}`}
+          {dueIds === null ? '…' : reviewIds.length === 0 ? 'Nothing to review — great!' : `Review ${Math.min(reviewIds.length, REVIEW_SIZE)} question${reviewIds.length === 1 ? '' : 's'}`}
         </button>
       </section>
     </div>

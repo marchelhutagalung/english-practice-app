@@ -109,6 +109,10 @@ function SetForm({ profile, onCancel, onSaved }: { profile: Profile; onCancel: (
   }, [source, competitionId]);
   useEffect(() => {
     if (source === 'topics') setTopicIds([]);
+    if (source !== 'competition') {
+      setCount(10);
+      setTimed(false);
+    }
   }, [source]);
   useEffect(() => {
     if (source === 'weak' && weak) setTopicIds(weak.map((w) => w.topic_id).filter((id) => content.topicById.has(id)));

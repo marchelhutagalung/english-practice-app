@@ -32,6 +32,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html,
 body {
   margin: 0;
@@ -712,8 +716,7 @@ button:disabled {
   padding: 0;
   margin-bottom: 6px;
 }
-input:not([type='checkbox']):not([type='range']),
-select {
+:where(input:not([type='checkbox']):not([type='range']), select) {
   display: block;
   width: 100%;
   min-height: var(--tap);
