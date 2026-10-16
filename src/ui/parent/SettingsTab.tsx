@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'preact/hooks';
 import { setSetting } from '../../db/repo';
 import { checkPin, isValidPin, setPin } from '../../pin';
-import { englishVoices, getTtsPrefs, onVoicesChanged, setTtsPrefs, speak, ttsSupported } from '../../tts';
+import { englishVoices, getTtsPrefs, onVoicesChanged, pickVoice, setTtsPrefs, speak, ttsSupported } from '../../tts';
+import { isHighQuality } from '../../domain/voices';
 import { alertDialog } from '../dialog';
 
 export function SettingsTab() {
@@ -10,6 +11,8 @@ export function SettingsTab() {
   const [rate, setRate] = useState(getTtsPrefs().rate);
   const [pins, setPins] = useState({ current: '', next: '', again: '' });
   const [persisted, setPersisted] = useState<boolean | null>(null);
+  const autoVoice = voices.length ? pickVoice(null) : undefined;
+  const hasGoodVoice = voices.some(isHighQuality);
 
   useEffect(() => onVoicesChanged(() => setVoices(englishVoices())), []);
   useEffect(() => {
@@ -64,9 +67,10 @@ export function SettingsTab() {
                   void saveVoice(v, rate);
                 }}
               >
-                <option value="">Automatic (en-US / en-GB)</option>
+                <option value="">Automatic — best available{autoVoice ? ` (${autoVoice.name})` : ''}</option>
                 {voices.map((v) => (
                   <option key={v.voiceURI} value={v.voiceURI}>
+                    {isHighQuality(v) ? '⭐ ' : ''}
                     {v.name} ({v.lang})
                   </option>
                 ))}
@@ -84,10 +88,16 @@ export function SettingsTab() {
                 onChange={(e) => void saveVoice(voiceURI, Number((e.target as HTMLInputElement).value))}
               />
             </label>
-            <button class="btn" onClick={() => speak('Hello! Let us practise English together.', { rate })}>
+            <button class="btn" onClick={() => speak('Hello! The cat is in the box. Let us practise English together.', { rate, voiceURI: voiceURI || null })}>
               ▶ Test voice
             </button>
-            <p class="muted">Tip: on iPad, more voices can be downloaded in Settings → Accessibility → Spoken Content → Voices.</p>
+            {voices.length > 0 && !hasGoodVoice && (
+              <p class="warn-text">
+                No high-quality English voice is installed, so speech may sound robotic. On the iPad, go to Settings → Accessibility → Spoken Content → Voices → English, and
+                download an "Enhanced" or "Premium" voice such as Ava, Samantha or Daniel (Wi-Fi needed once). Then reopen this app and choose it here.
+              </p>
+            )}
+            <p class="muted">⭐ = high-quality voice. Novelty voices are hidden. If you hear nothing, check that the iPad volume is up and the silent mode is off.</p>
           </>
         )}
       </div>
