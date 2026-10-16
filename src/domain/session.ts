@@ -28,3 +28,14 @@ export function timeLimitMinutes(set: PracticeSet, competitions: readonly Compet
   if (c) return Math.max(1, Math.ceil((c.format.time_limit_min * set.question_count) / c.format.question_count));
   return Math.max(1, set.question_count);
 }
+
+/** Topics for free practice: near the kid's grade, optionally one category. */
+export function freePracticeWeights(
+  topics: readonly { id: string; category: string; grade_min: number; grade_max: number }[],
+  grade: number,
+  category: string | 'mix',
+): Record<string, number> {
+  const near = topics.filter((t) => t.grade_max >= grade - 1 && t.grade_min <= grade + 1);
+  const chosen = near.filter((t) => category === 'mix' || t.category === category);
+  return equalWeights(chosen.map((t) => t.id));
+}
