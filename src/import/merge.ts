@@ -95,19 +95,41 @@ export async function applyImport(db: DB, pack: Pack, opts: { builtin?: boolean;
   await tx.done;
 }
 
-/** Remove a pack's content (items it last wrote). Progress is kept. */
+/**
+ * Remove a pack's content (items it last wrote). Progress is kept.
+ * Topics and passages that other packs' questions still use are kept too,
+ * so deleting one pack never breaks another.
+ */
 export async function deletePack(db: DB, packId: string): Promise<number> {
   const tx = db.transaction([...KINDS, 'packs'], 'readwrite');
   let removed = 0;
-  for (const kind of KINDS) {
-    const index = tx.objectStore(kind).index('pack_id');
-    let cursor = await index.openCursor(packId);
+  /** Delete the pack's items; an item still in use is handed over to a pack that uses it. */
+  const deleteOwned = async (kind: Kind, newOwner: (id: string) => string | undefined = () => undefined) => {
+    let cursor = await tx.objectStore(kind).index('pack_id').openCursor(packId);
     while (cursor) {
-      await cursor.delete();
-      removed++;
+      const owner = newOwner(cursor.primaryKey);
+      if (owner) await cursor.update({ ...cursor.value, pack_id: owner });
+      else {
+        await cursor.delete();
+        removed++;
+      }
       cursor = await cursor.continue();
     }
+  };
+  await deleteOwned('questions');
+  await deleteOwned('competitions');
+  const passageUser = new Map<string, string>();
+  const topicUser = new Map<string, string>();
+  for (const q of await tx.objectStore('questions').getAll()) {
+    if (q.passage_id) passageUser.set(q.passage_id, q.pack_id);
+    topicUser.set(q.topic_id, q.pack_id);
   }
+  await deleteOwned('passages', (id) => passageUser.get(id));
+  for (const p of await tx.objectStore('passages').getAll()) topicUser.set(p.topic_id, p.pack_id);
+  for (const c of await tx.objectStore('competitions').getAll()) {
+    for (const t of Object.keys(c.topic_weights)) topicUser.set(t, c.pack_id);
+  }
+  await deleteOwned('topics', (id) => topicUser.get(id));
   await tx.objectStore('packs').delete(packId);
   await tx.done;
   return removed;
