@@ -16,6 +16,28 @@
   </head>
   <body>
     <div id="app"></div>
+    <script>
+      // If the app script fails before it can draw anything (old Safari, a load error),
+      // show a message instead of a blank white page.
+      (function () {
+        function show(msg) {
+          var app = document.getElementById('app');
+          if (!app || app.childNodes.length) return;
+          app.innerHTML =
+            '<div style="font:20px system-ui,sans-serif;padding:32px;text-align:center;color:#2b2d42">' +
+            '<p style="font-size:48px;margin:0">😕</p><h2>The app could not start</h2>' +
+            '<p style="color:#6b6f86">' + msg + '</p>' +
+            '<p style="color:#6b6f86">Please update iPadOS (Settings → General → Software Update) and open this page in Safari.</p>' +
+            '<button onclick="location.reload()" style="font:inherit;padding:12px 28px;border-radius:999px;border:0;background:#5b6cff;color:#fff">Try again</button></div>';
+        }
+        window.addEventListener('error', function (e) {
+          show(String((e && e.message) || 'Script error').replace(/[<>&]/g, ''));
+        });
+        setTimeout(function () {
+          show('The app took too long to load.');
+        }, 20000);
+      })();
+    </script>
     <noscript>This app needs JavaScript.</noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>

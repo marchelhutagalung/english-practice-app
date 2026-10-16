@@ -9,6 +9,10 @@ const base = process.env.BASE_PATH || '/';
 
 export default defineConfig({
   base,
+  build: {
+    // Downlevel syntax so older iPads (Safari 14+) can run the app.
+    target: ['es2019', 'safari14'],
+  },
   plugins: [
     preact(),
     VitePWA({
