@@ -1,0 +1,1796 @@
+{
+  "schema_version": 1,
+  "pack_id": "sample-grade3",
+  "pack_version": 1,
+  "title": "Sample Pack — Grade 3 (+ Grade 5 preview)",
+  "topics": [
+    {
+      "id": "g-articles",
+      "category": "grammar",
+      "name": "Articles (a / an / the)",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "g-prep-place",
+      "category": "grammar",
+      "name": "Prepositions of place",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "g-prep-time",
+      "category": "grammar",
+      "name": "Prepositions of time",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "g-nouns-plural",
+      "category": "grammar",
+      "name": "Nouns: singular and plural",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "g-pronouns",
+      "category": "grammar",
+      "name": "Pronouns",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "g-conjunctions",
+      "category": "grammar",
+      "name": "Conjunctions (and / but / or / because)",
+      "grade_min": 3,
+      "grade_max": 4
+    },
+    {
+      "id": "g-simple-present",
+      "category": "grammar",
+      "name": "Simple present",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "g-simple-past",
+      "category": "grammar",
+      "name": "Simple past",
+      "grade_min": 3,
+      "grade_max": 4
+    },
+    {
+      "id": "g-present-continuous",
+      "category": "grammar",
+      "name": "Present continuous",
+      "grade_min": 3,
+      "grade_max": 4
+    },
+    {
+      "id": "v-family",
+      "category": "vocabulary",
+      "name": "Family",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "v-school",
+      "category": "vocabulary",
+      "name": "School",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "v-food",
+      "category": "vocabulary",
+      "name": "Food",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "v-animals",
+      "category": "vocabulary",
+      "name": "Animals",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "v-house",
+      "category": "vocabulary",
+      "name": "House",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "v-body",
+      "category": "vocabulary",
+      "name": "Body",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "v-jobs",
+      "category": "vocabulary",
+      "name": "Jobs",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "r-narrative",
+      "category": "reading",
+      "name": "Reading: stories",
+      "grade_min": 3,
+      "grade_max": 4
+    },
+    {
+      "id": "r-informational",
+      "category": "reading",
+      "name": "Reading: facts",
+      "grade_min": 3,
+      "grade_max": 5
+    },
+    {
+      "id": "r-descriptive",
+      "category": "reading",
+      "name": "Reading: describing",
+      "grade_min": 3,
+      "grade_max": 4
+    },
+    {
+      "id": "l-daily",
+      "category": "listening",
+      "name": "Listening: daily life",
+      "grade_min": 2,
+      "grade_max": 4
+    },
+    {
+      "id": "g5-comparatives",
+      "category": "grammar",
+      "name": "Comparatives and superlatives",
+      "grade_min": 4,
+      "grade_max": 6
+    },
+    {
+      "id": "g5-past-continuous",
+      "category": "grammar",
+      "name": "Past continuous",
+      "grade_min": 4,
+      "grade_max": 6
+    },
+    {
+      "id": "g5-modals",
+      "category": "grammar",
+      "name": "Modal verbs (can / must / should / might / may)",
+      "grade_min": 5,
+      "grade_max": 6
+    }
+  ],
+  "competitions": [
+    {
+      "id": "comp-g3-sample",
+      "name": "Grade 3 English Olympiad (sample)",
+      "grade": 3,
+      "format": {
+        "question_count": 30,
+        "time_limit_min": 45
+      },
+      "topic_weights": {
+        "g-articles": 0.05,
+        "g-prep-place": 0.05,
+        "g-prep-time": 0.05,
+        "g-nouns-plural": 0.05,
+        "g-pronouns": 0.05,
+        "g-conjunctions": 0.05,
+        "g-simple-present": 0.05,
+        "g-simple-past": 0.05,
+        "g-present-continuous": 0.05,
+        "v-family": 0.03,
+        "v-school": 0.03,
+        "v-food": 0.03,
+        "v-animals": 0.03,
+        "v-house": 0.03,
+        "v-body": 0.03,
+        "v-jobs": 0.03,
+        "r-narrative": 0.08,
+        "r-informational": 0.08,
+        "r-descriptive": 0.08,
+        "l-daily": 0.1
+      }
+    },
+    {
+      "id": "comp-g5-sample",
+      "name": "Grade 5 English Olympiad (sample)",
+      "grade": 5,
+      "format": {
+        "question_count": 20,
+        "time_limit_min": 30
+      },
+      "topic_weights": {
+        "g5-comparatives": 0.3,
+        "g5-past-continuous": 0.3,
+        "g5-modals": 0.3,
+        "r-informational": 0.1
+      }
+    }
+  ],
+  "passages": [
+    {
+      "id": "p-nar-kite",
+      "topic_id": "r-narrative",
+      "title": "Mia's Lost Kite",
+      "text": "On Saturday, Mia went to the park with her brother Leo. She had a new red kite. The wind was strong, and the kite flew high in the sky. Suddenly, the string broke! The kite flew away and landed in a tall tree. Leo found a long stick and gently pushed the kite down. Mia hugged her brother and said, \"Thank you, Leo!\" Then they flew the kite together until it was time to go home."
+    },
+    {
+      "id": "p-nar-seed",
+      "topic_id": "r-narrative",
+      "title": "The Little Seed",
+      "text": "Ben planted a small seed in a pot. Every morning, he gave it a little water and put the pot near the window. After one week, a tiny green shoot came out of the soil. Ben was very excited. He kept taking care of it. After two months, the plant had a big yellow flower. Ben showed the flower to his grandpa. \"You were patient, and now you have a beautiful sunflower,\" said Grandpa."
+    },
+    {
+      "id": "p-inf-penguins",
+      "topic_id": "r-informational",
+      "title": "Penguins",
+      "text": "Penguins are birds, but they cannot fly. They use their wings like flippers to swim fast in the water. Most penguins live in the south of the world, where it is very cold. Penguins have thick feathers and a layer of fat to keep them warm. They eat fish and other small sea animals. Some penguins slide on their bellies across the ice!"
+    },
+    {
+      "id": "p-inf-teeth",
+      "topic_id": "r-informational",
+      "title": "Why We Brush Our Teeth",
+      "text": "Brushing your teeth keeps them healthy and strong. Tiny germs live in your mouth. When you eat sweet food, the germs make acid that can make holes in your teeth. These holes are called cavities. Dentists say you should brush your teeth two times a day, for two minutes each time. You should also visit the dentist every six months for a check-up."
+    },
+    {
+      "id": "p-desc-garden",
+      "topic_id": "r-descriptive",
+      "title": "My Grandma's Garden",
+      "text": "My grandma has a beautiful garden behind her house. There are red roses and white daisies along the fence. In the middle of the garden, there is a small pond with orange fish. A big mango tree stands in the corner. Its leaves give cool shade on hot days. Grandma's cat likes to sleep under the tree. I love the sweet smell of the flowers."
+    },
+    {
+      "id": "p-desc-classroom",
+      "topic_id": "r-descriptive",
+      "title": "Our Classroom",
+      "text": "Our classroom is bright and colorful. It has big windows, so the sun comes in every morning. There are twenty desks in four rows. On the front wall, there is a whiteboard and a clock. At the back of the classroom, there is a reading corner with soft pillows and many books. Our teacher keeps a green plant on her desk. We work together to keep our classroom clean and tidy."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-g-articles-01",
+      "topic_id": "g-articles",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "I have ___ apple in my bag.",
+      "options": [
+        "an",
+        "a"
+      ],
+      "answer": "an",
+      "explanation": "We use \"an\" before a vowel sound. \"Apple\" starts with the sound \"a\"."
+    },
+    {
+      "id": "q-g-articles-02",
+      "topic_id": "g-articles",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "My dad drives ___ blue car.",
+      "options": [
+        "an",
+        "a"
+      ],
+      "answer": "a",
+      "explanation": "\"Blue\" starts with the consonant sound \"b\", so we use \"a\"."
+    },
+    {
+      "id": "q-g-articles-03",
+      "topic_id": "g-articles",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "Look at ___ sun! It is very bright today.",
+      "options": [
+        "an",
+        "the",
+        "a"
+      ],
+      "answer": "the",
+      "explanation": "There is only one sun, so we say \"the sun\"."
+    },
+    {
+      "id": "q-g-articles-04",
+      "topic_id": "g-articles",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "It takes ___ hour to get to Grandma's house.",
+      "options": [
+        "a",
+        "an"
+      ],
+      "answer": "an",
+      "explanation": "In \"hour\" the \"h\" is silent, so the word starts with a vowel sound. We say \"an hour\"."
+    },
+    {
+      "id": "q-g-articles-05",
+      "topic_id": "g-articles",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "___ moon is round and bright tonight.",
+      "options": [
+        "A",
+        "An",
+        "The"
+      ],
+      "answer": "The",
+      "explanation": "There is only one moon in our sky, so we say \"the moon\"."
+    },
+    {
+      "id": "q-g-prep-place-01",
+      "topic_id": "g-prep-place",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "I put my book inside my bag. The book is ___ the bag.",
+      "options": [
+        "under",
+        "in",
+        "on"
+      ],
+      "answer": "in",
+      "explanation": "When something is inside, we use \"in\"."
+    },
+    {
+      "id": "q-g-prep-place-02",
+      "topic_id": "g-prep-place",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "The picture hangs ___ the wall.",
+      "options": [
+        "on",
+        "in",
+        "under"
+      ],
+      "answer": "on",
+      "explanation": "A picture touches the wall's surface, so it is \"on\" the wall."
+    },
+    {
+      "id": "q-g-prep-place-03",
+      "topic_id": "g-prep-place",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "The ball rolled ___ the table, so I crawled down low to get it.",
+      "options": [
+        "on",
+        "between",
+        "under"
+      ],
+      "answer": "under",
+      "explanation": "I had to crawl down low, so the ball was below the table: \"under\"."
+    },
+    {
+      "id": "q-g-prep-place-04",
+      "topic_id": "g-prep-place",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "Mia sits on Tom's left and Sam sits on Tom's right. Tom sits ___ Mia and Sam.",
+      "options": [
+        "under",
+        "between",
+        "behind"
+      ],
+      "answer": "between",
+      "explanation": "Tom is in the middle of two people, so he is \"between\" them."
+    },
+    {
+      "id": "q-g-prep-place-05",
+      "topic_id": "g-prep-place",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "true_false",
+      "prompt": "\"Next to\" means almost the same as \"beside\".",
+      "answer": "True",
+      "explanation": "Both \"next to\" and \"beside\" mean very close, at the side of something."
+    },
+    {
+      "id": "q-g-prep-time-01",
+      "topic_id": "g-prep-time",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "My birthday is ___ May.",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ],
+      "answer": "in",
+      "explanation": "We use \"in\" with months, like \"in May\"."
+    },
+    {
+      "id": "q-g-prep-time-02",
+      "topic_id": "g-prep-time",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "School starts ___ 7 o'clock.",
+      "options": [
+        "on",
+        "in",
+        "at"
+      ],
+      "answer": "at",
+      "explanation": "We use \"at\" with clock times, like \"at 7 o'clock\"."
+    },
+    {
+      "id": "q-g-prep-time-03",
+      "topic_id": "g-prep-time",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "We go swimming ___ Saturday.",
+      "options": [
+        "at",
+        "on",
+        "in"
+      ],
+      "answer": "on",
+      "explanation": "We use \"on\" with days, like \"on Saturday\"."
+    },
+    {
+      "id": "q-g-prep-time-04",
+      "topic_id": "g-prep-time",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "I drink a glass of milk ___ the morning.",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ],
+      "answer": "in",
+      "explanation": "We say \"in the morning\", \"in the afternoon\" and \"in the evening\"."
+    },
+    {
+      "id": "q-g-nouns-plural-01",
+      "topic_id": "g-nouns-plural",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "I can see five ___ in the sky.",
+      "options": [
+        "bird",
+        "birdes",
+        "birds"
+      ],
+      "answer": "birds",
+      "explanation": "Most nouns just add \"s\" for more than one: bird → birds."
+    },
+    {
+      "id": "q-g-nouns-plural-02",
+      "topic_id": "g-nouns-plural",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "There are three ___ on the table.",
+      "options": [
+        "boxs",
+        "boxes",
+        "box"
+      ],
+      "answer": "boxes",
+      "explanation": "Words ending in \"x\" add \"es\": box → boxes."
+    },
+    {
+      "id": "q-g-nouns-plural-03",
+      "topic_id": "g-nouns-plural",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "One child, two ___.",
+      "options": [
+        "children",
+        "childs",
+        "childes"
+      ],
+      "answer": "children",
+      "explanation": "\"Child\" is special. Two or more are \"children\"."
+    },
+    {
+      "id": "q-g-nouns-plural-04",
+      "topic_id": "g-nouns-plural",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "Two ___ are eating cheese in the kitchen.",
+      "options": [
+        "mouses",
+        "mices",
+        "mice"
+      ],
+      "answer": "mice",
+      "explanation": "\"Mouse\" is special. Two or more are \"mice\"."
+    },
+    {
+      "id": "q-g-nouns-plural-05",
+      "topic_id": "g-nouns-plural",
+      "grade": 3,
+      "difficulty": 3,
+      "type": "fill_blank",
+      "prompt": "One baby, two ___. (Type the word.)",
+      "answer": "babies",
+      "explanation": "When a word ends in a consonant + \"y\", change \"y\" to \"i\" and add \"es\": baby → babies."
+    },
+    {
+      "id": "q-g-pronouns-01",
+      "topic_id": "g-pronouns",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "Lily is my sister. ___ is eight years old.",
+      "options": [
+        "It",
+        "She",
+        "He"
+      ],
+      "answer": "She",
+      "explanation": "Lily is a girl, so we use \"she\"."
+    },
+    {
+      "id": "q-g-pronouns-02",
+      "topic_id": "g-pronouns",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "This is my pencil. I use ___ every day.",
+      "options": [
+        "it",
+        "them",
+        "her"
+      ],
+      "answer": "it",
+      "explanation": "A pencil is one thing, so we use \"it\"."
+    },
+    {
+      "id": "q-g-pronouns-03",
+      "topic_id": "g-pronouns",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "Ben and I are friends. ___ play together after school.",
+      "options": [
+        "They",
+        "He",
+        "We"
+      ],
+      "answer": "We",
+      "explanation": "\"Ben and I\" includes me, so we use \"we\"."
+    },
+    {
+      "id": "q-g-pronouns-04",
+      "topic_id": "g-pronouns",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "Please give the book to ___. I want to read it.",
+      "options": [
+        "my",
+        "me",
+        "I"
+      ],
+      "answer": "me",
+      "explanation": "After \"to\" we use \"me\", not \"I\"."
+    },
+    {
+      "id": "q-g-conjunctions-01",
+      "topic_id": "g-conjunctions",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "I like apples ___ bananas.",
+      "options": [
+        "and",
+        "but",
+        "because"
+      ],
+      "answer": "and",
+      "explanation": "\"And\" joins two things you like."
+    },
+    {
+      "id": "q-g-conjunctions-02",
+      "topic_id": "g-conjunctions",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "I am hungry ___ I did not eat breakfast.",
+      "options": [
+        "but",
+        "or",
+        "because"
+      ],
+      "answer": "because",
+      "explanation": "\"Because\" gives the reason: not eating breakfast is why I am hungry."
+    },
+    {
+      "id": "q-g-conjunctions-03",
+      "topic_id": "g-conjunctions",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "You can choose only one drink. Would you like milk ___ juice?",
+      "options": [
+        "because",
+        "or",
+        "and"
+      ],
+      "answer": "or",
+      "explanation": "When we choose one thing, we use \"or\"."
+    },
+    {
+      "id": "q-g-conjunctions-04",
+      "topic_id": "g-conjunctions",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "Sam is small, ___ he is very strong.",
+      "options": [
+        "but",
+        "because",
+        "or"
+      ],
+      "answer": "but",
+      "explanation": "\"But\" shows a surprise or difference: small, yet strong."
+    },
+    {
+      "id": "q-g-simple-present-01",
+      "topic_id": "g-simple-present",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "My brother ___ football every day.",
+      "options": [
+        "play",
+        "playing",
+        "plays"
+      ],
+      "answer": "plays",
+      "explanation": "With he, she or one person, we add \"s\": he plays."
+    },
+    {
+      "id": "q-g-simple-present-02",
+      "topic_id": "g-simple-present",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "They ___ to school by bus every morning.",
+      "options": [
+        "going",
+        "go",
+        "goes"
+      ],
+      "answer": "go",
+      "explanation": "With \"they\" we use the base verb: they go."
+    },
+    {
+      "id": "q-g-simple-present-03",
+      "topic_id": "g-simple-present",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "The sun ___ in the east.",
+      "options": [
+        "rises",
+        "rise",
+        "rising"
+      ],
+      "answer": "rises",
+      "explanation": "This is always true, so we use the simple present. \"The sun\" is one thing, so add \"s\": rises."
+    },
+    {
+      "id": "q-g-simple-present-04",
+      "topic_id": "g-simple-present",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "___ she like ice cream?",
+      "options": [
+        "Do",
+        "Is",
+        "Does"
+      ],
+      "answer": "Does",
+      "explanation": "For questions with he, she or it, we start with \"Does\"."
+    },
+    {
+      "id": "q-g-simple-past-01",
+      "topic_id": "g-simple-past",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "Yesterday, I ___ my grandma.",
+      "options": [
+        "visiting",
+        "visited",
+        "visit"
+      ],
+      "answer": "visited",
+      "explanation": "\"Yesterday\" means the past. We add \"ed\": visit → visited."
+    },
+    {
+      "id": "q-g-simple-past-02",
+      "topic_id": "g-simple-past",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "She ___ to the park last Sunday.",
+      "options": [
+        "went",
+        "go",
+        "goes"
+      ],
+      "answer": "went",
+      "explanation": "\"Go\" is special. In the past it becomes \"went\"."
+    },
+    {
+      "id": "q-g-simple-past-03",
+      "topic_id": "g-simple-past",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "Last night we ___ a funny movie.",
+      "options": [
+        "see",
+        "seed",
+        "saw"
+      ],
+      "answer": "saw",
+      "explanation": "\"See\" is special. In the past it becomes \"saw\"."
+    },
+    {
+      "id": "q-g-simple-past-04",
+      "topic_id": "g-simple-past",
+      "grade": 3,
+      "difficulty": 3,
+      "type": "fill_blank",
+      "prompt": "Last week, Dad ___ me a new bike. (buy)",
+      "answer": "bought",
+      "explanation": "\"Buy\" is special. In the past it becomes \"bought\"."
+    },
+    {
+      "id": "q-g-present-continuous-01",
+      "topic_id": "g-present-continuous",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "Look! The children ___ in the garden.",
+      "options": [
+        "plays",
+        "are playing",
+        "is playing"
+      ],
+      "answer": "are playing",
+      "explanation": "\"Look!\" shows it is happening now. With \"children\" we use \"are\" + verb-ing."
+    },
+    {
+      "id": "q-g-present-continuous-02",
+      "topic_id": "g-present-continuous",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "I ___ my homework right now.",
+      "options": [
+        "am doing",
+        "is doing",
+        "are doing"
+      ],
+      "answer": "am doing",
+      "explanation": "With \"I\" we use \"am\" + verb-ing for things happening now."
+    },
+    {
+      "id": "q-g-present-continuous-03",
+      "topic_id": "g-present-continuous",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "Listen! Mom ___ a song.",
+      "options": [
+        "are singing",
+        "sing",
+        "is singing"
+      ],
+      "answer": "is singing",
+      "explanation": "\"Listen!\" shows it is happening now. With one person we use \"is\" + verb-ing."
+    },
+    {
+      "id": "q-g-present-continuous-04",
+      "topic_id": "g-present-continuous",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "true_false",
+      "prompt": "This sentence is correct: \"They is running now.\"",
+      "answer": "False",
+      "explanation": "With \"they\" we must use \"are\": \"They are running now.\""
+    },
+    {
+      "id": "q-v-family-01",
+      "topic_id": "v-family",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "My mother's mother is my ___.",
+      "options": [
+        "sister",
+        "grandmother",
+        "aunt"
+      ],
+      "answer": "grandmother",
+      "explanation": "Your mom's mom is your grandmother."
+    },
+    {
+      "id": "q-v-family-02",
+      "topic_id": "v-family",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "My father's brother is my ___.",
+      "options": [
+        "uncle",
+        "cousin",
+        "grandfather"
+      ],
+      "answer": "uncle",
+      "explanation": "Your dad's brother is your uncle."
+    },
+    {
+      "id": "q-v-family-03",
+      "topic_id": "v-family",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "My aunt's son is my ___.",
+      "options": [
+        "brother",
+        "uncle",
+        "cousin"
+      ],
+      "answer": "cousin",
+      "explanation": "The children of your aunt or uncle are your cousins."
+    },
+    {
+      "id": "q-v-school-01",
+      "topic_id": "v-school",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "We use ___ to cut paper.",
+      "options": [
+        "glue",
+        "scissors",
+        "a ruler"
+      ],
+      "answer": "scissors",
+      "explanation": "Scissors have two sharp blades that cut paper."
+    },
+    {
+      "id": "q-v-school-02",
+      "topic_id": "v-school",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "The person who teaches us in class is the ___.",
+      "options": [
+        "teacher",
+        "doctor",
+        "driver"
+      ],
+      "answer": "teacher",
+      "explanation": "A teacher helps us learn at school."
+    },
+    {
+      "id": "q-v-school-03",
+      "topic_id": "v-school",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "I use ___ to rub out my pencil mistakes.",
+      "options": [
+        "a ruler",
+        "a crayon",
+        "an eraser"
+      ],
+      "answer": "an eraser",
+      "explanation": "An eraser removes pencil marks."
+    },
+    {
+      "id": "q-v-food-01",
+      "topic_id": "v-food",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "Which one is a fruit?",
+      "options": [
+        "bread",
+        "mango",
+        "carrot"
+      ],
+      "answer": "mango",
+      "explanation": "A mango is a sweet fruit. A carrot is a vegetable."
+    },
+    {
+      "id": "q-v-food-02",
+      "topic_id": "v-food",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "Cows give us ___.",
+      "options": [
+        "milk",
+        "eggs",
+        "honey"
+      ],
+      "answer": "milk",
+      "explanation": "We get milk from cows. Eggs come from chickens and honey from bees."
+    },
+    {
+      "id": "q-v-food-03",
+      "topic_id": "v-food",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "We usually eat soup with a ___.",
+      "options": [
+        "fork",
+        "knife",
+        "spoon"
+      ],
+      "answer": "spoon",
+      "explanation": "Soup is liquid, so a spoon is best."
+    },
+    {
+      "id": "q-v-animals-01",
+      "topic_id": "v-animals",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "Which animal can fly?",
+      "options": [
+        "rabbit",
+        "eagle",
+        "cow"
+      ],
+      "answer": "eagle",
+      "explanation": "An eagle is a bird with big wings, so it can fly."
+    },
+    {
+      "id": "q-v-animals-02",
+      "topic_id": "v-animals",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "A baby cat is called a ___.",
+      "options": [
+        "kitten",
+        "puppy",
+        "calf"
+      ],
+      "answer": "kitten",
+      "explanation": "A baby cat is a kitten. A baby dog is a puppy."
+    },
+    {
+      "id": "q-v-animals-03",
+      "topic_id": "v-animals",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "Which animal lives in the sea?",
+      "options": [
+        "lion",
+        "horse",
+        "dolphin"
+      ],
+      "answer": "dolphin",
+      "explanation": "Dolphins live and swim in the sea."
+    },
+    {
+      "id": "q-v-house-01",
+      "topic_id": "v-house",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "We sleep in the ___.",
+      "options": [
+        "garage",
+        "bedroom",
+        "kitchen"
+      ],
+      "answer": "bedroom",
+      "explanation": "The bedroom is the room with a bed."
+    },
+    {
+      "id": "q-v-house-02",
+      "topic_id": "v-house",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "We cook food in the ___.",
+      "options": [
+        "kitchen",
+        "bathroom",
+        "bedroom"
+      ],
+      "answer": "kitchen",
+      "explanation": "The kitchen has a stove for cooking."
+    },
+    {
+      "id": "q-v-house-03",
+      "topic_id": "v-house",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "We keep food cold in the ___.",
+      "options": [
+        "oven",
+        "sofa",
+        "refrigerator"
+      ],
+      "answer": "refrigerator",
+      "explanation": "A refrigerator (fridge) keeps food cold. An oven makes food hot."
+    },
+    {
+      "id": "q-v-body-01",
+      "topic_id": "v-body",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "We see with our ___.",
+      "options": [
+        "nose",
+        "eyes",
+        "ears"
+      ],
+      "answer": "eyes",
+      "explanation": "Our eyes help us see."
+    },
+    {
+      "id": "q-v-body-02",
+      "topic_id": "v-body",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "We smell with our ___.",
+      "options": [
+        "nose",
+        "hands",
+        "knees"
+      ],
+      "answer": "nose",
+      "explanation": "Our nose helps us smell."
+    },
+    {
+      "id": "q-v-body-03",
+      "topic_id": "v-body",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "We have ten ___ on our two hands.",
+      "options": [
+        "toes",
+        "elbows",
+        "fingers"
+      ],
+      "answer": "fingers",
+      "explanation": "Each hand has five fingers. Toes are on our feet."
+    },
+    {
+      "id": "q-v-jobs-01",
+      "topic_id": "v-jobs",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "A ___ helps sick people get better.",
+      "options": [
+        "pilot",
+        "doctor",
+        "farmer"
+      ],
+      "answer": "doctor",
+      "explanation": "A doctor takes care of sick people."
+    },
+    {
+      "id": "q-v-jobs-02",
+      "topic_id": "v-jobs",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "A ___ flies an airplane.",
+      "options": [
+        "pilot",
+        "chef",
+        "dentist"
+      ],
+      "answer": "pilot",
+      "explanation": "A pilot flies airplanes."
+    },
+    {
+      "id": "q-v-jobs-03",
+      "topic_id": "v-jobs",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "A ___ grows vegetables and keeps animals on a farm.",
+      "options": [
+        "police officer",
+        "painter",
+        "farmer"
+      ],
+      "answer": "farmer",
+      "explanation": "A farmer works on a farm."
+    },
+    {
+      "id": "q-v-jobs-04",
+      "topic_id": "v-jobs",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "true_false",
+      "prompt": "A chef cooks food in a restaurant.",
+      "answer": "True",
+      "explanation": "A chef is a cook who makes food, often in a restaurant."
+    },
+    {
+      "id": "q-r-narrative-01",
+      "topic_id": "r-narrative",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "What color was Mia's kite?",
+      "options": [
+        "yellow",
+        "red",
+        "blue"
+      ],
+      "answer": "red",
+      "passage_id": "p-nar-kite",
+      "explanation": "The story says, \"She had a new red kite.\""
+    },
+    {
+      "id": "q-r-narrative-02",
+      "topic_id": "r-narrative",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "Where did the kite land?",
+      "options": [
+        "in a tall tree",
+        "in a pond",
+        "on a roof"
+      ],
+      "answer": "in a tall tree",
+      "passage_id": "p-nar-kite",
+      "explanation": "The story says the kite \"landed in a tall tree\"."
+    },
+    {
+      "id": "q-r-narrative-03",
+      "topic_id": "r-narrative",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "reading_mcq",
+      "prompt": "How did Leo get the kite down?",
+      "options": [
+        "He climbed the tree.",
+        "He asked a man for help.",
+        "He pushed it down with a long stick."
+      ],
+      "answer": "He pushed it down with a long stick.",
+      "passage_id": "p-nar-kite",
+      "explanation": "Leo \"found a long stick and gently pushed the kite down\"."
+    },
+    {
+      "id": "q-r-narrative-04",
+      "topic_id": "r-narrative",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "reading_mcq",
+      "prompt": "How did Mia feel at the end of the story?",
+      "options": [
+        "scared",
+        "happy and thankful",
+        "angry"
+      ],
+      "answer": "happy and thankful",
+      "passage_id": "p-nar-kite",
+      "explanation": "Mia hugged Leo and said \"Thank you\", so she felt happy and thankful."
+    },
+    {
+      "id": "q-r-narrative-05",
+      "topic_id": "r-narrative",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "Where did Ben put the pot every morning?",
+      "options": [
+        "near the window",
+        "in the garden",
+        "under his bed"
+      ],
+      "answer": "near the window",
+      "passage_id": "p-nar-seed",
+      "explanation": "The story says he \"put the pot near the window\"."
+    },
+    {
+      "id": "q-r-narrative-06",
+      "topic_id": "r-narrative",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "When did a green shoot come out of the soil?",
+      "options": [
+        "after one day",
+        "after one year",
+        "after one week"
+      ],
+      "answer": "after one week",
+      "passage_id": "p-nar-seed",
+      "explanation": "The story says, \"After one week, a tiny green shoot came out.\""
+    },
+    {
+      "id": "q-r-narrative-07",
+      "topic_id": "r-narrative",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "What color was the flower?",
+      "options": [
+        "purple",
+        "yellow",
+        "red"
+      ],
+      "answer": "yellow",
+      "passage_id": "p-nar-seed",
+      "explanation": "The plant \"had a big yellow flower\" — a sunflower."
+    },
+    {
+      "id": "q-r-narrative-08",
+      "topic_id": "r-narrative",
+      "grade": 3,
+      "difficulty": 3,
+      "type": "reading_mcq",
+      "prompt": "Grandpa says Ben was \"patient\". What does \"patient\" mean here?",
+      "options": [
+        "able to wait calmly for a long time",
+        "very fast",
+        "very loud"
+      ],
+      "answer": "able to wait calmly for a long time",
+      "passage_id": "p-nar-seed",
+      "explanation": "Ben waited two months and kept caring for the plant. Waiting calmly is being patient."
+    },
+    {
+      "id": "q-r-informational-01",
+      "topic_id": "r-informational",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "Can penguins fly?",
+      "options": [
+        "Yes, they fly very high.",
+        "Yes, but only at night.",
+        "No, they cannot."
+      ],
+      "answer": "No, they cannot.",
+      "passage_id": "p-inf-penguins",
+      "explanation": "The text says, \"Penguins are birds, but they cannot fly.\""
+    },
+    {
+      "id": "q-r-informational-02",
+      "topic_id": "r-informational",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "What do penguins use their wings for?",
+      "options": [
+        "to sing",
+        "to swim",
+        "to dig"
+      ],
+      "answer": "to swim",
+      "passage_id": "p-inf-penguins",
+      "explanation": "They use their wings \"like flippers to swim fast\"."
+    },
+    {
+      "id": "q-r-informational-03",
+      "topic_id": "r-informational",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "reading_mcq",
+      "prompt": "What keeps penguins warm?",
+      "options": [
+        "thick feathers and a layer of fat",
+        "warm houses",
+        "hot water"
+      ],
+      "answer": "thick feathers and a layer of fat",
+      "passage_id": "p-inf-penguins",
+      "explanation": "The text says thick feathers and a layer of fat keep them warm."
+    },
+    {
+      "id": "q-r-informational-04",
+      "topic_id": "r-informational",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "What do penguins eat?",
+      "options": [
+        "grass and leaves",
+        "bread and rice",
+        "fish and other small sea animals"
+      ],
+      "answer": "fish and other small sea animals",
+      "passage_id": "p-inf-penguins",
+      "explanation": "The text says, \"They eat fish and other small sea animals.\""
+    },
+    {
+      "id": "q-r-informational-05",
+      "topic_id": "r-informational",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "How many times a day should you brush your teeth?",
+      "options": [
+        "five times",
+        "two times",
+        "one time"
+      ],
+      "answer": "two times",
+      "passage_id": "p-inf-teeth",
+      "explanation": "Dentists say to brush \"two times a day\"."
+    },
+    {
+      "id": "q-r-informational-06",
+      "topic_id": "r-informational",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "reading_mcq",
+      "prompt": "What are the holes in teeth called?",
+      "options": [
+        "cavities",
+        "germs",
+        "check-ups"
+      ],
+      "answer": "cavities",
+      "passage_id": "p-inf-teeth",
+      "explanation": "The text says, \"These holes are called cavities.\""
+    },
+    {
+      "id": "q-r-informational-07",
+      "topic_id": "r-informational",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "reading_mcq",
+      "prompt": "How often should you visit the dentist?",
+      "options": [
+        "every day",
+        "every ten years",
+        "every six months"
+      ],
+      "answer": "every six months",
+      "passage_id": "p-inf-teeth",
+      "explanation": "The text says to visit the dentist \"every six months\"."
+    },
+    {
+      "id": "q-r-descriptive-01",
+      "topic_id": "r-descriptive",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "Where is Grandma's garden?",
+      "options": [
+        "next to the beach",
+        "behind her house",
+        "in front of the school"
+      ],
+      "answer": "behind her house",
+      "passage_id": "p-desc-garden",
+      "explanation": "The text says the garden is \"behind her house\"."
+    },
+    {
+      "id": "q-r-descriptive-02",
+      "topic_id": "r-descriptive",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "What is in the middle of the garden?",
+      "options": [
+        "a small pond",
+        "a big mango tree",
+        "a swing"
+      ],
+      "answer": "a small pond",
+      "passage_id": "p-desc-garden",
+      "explanation": "\"In the middle of the garden, there is a small pond.\" The mango tree is in the corner."
+    },
+    {
+      "id": "q-r-descriptive-03",
+      "topic_id": "r-descriptive",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "reading_mcq",
+      "prompt": "Where does Grandma's cat like to sleep?",
+      "options": [
+        "in the pond",
+        "on the fence",
+        "under the mango tree"
+      ],
+      "answer": "under the mango tree",
+      "passage_id": "p-desc-garden",
+      "explanation": "The cat \"likes to sleep under the tree\" — the mango tree."
+    },
+    {
+      "id": "q-r-descriptive-04",
+      "topic_id": "r-descriptive",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "What color are the fish in the pond?",
+      "options": [
+        "black",
+        "orange",
+        "green"
+      ],
+      "answer": "orange",
+      "passage_id": "p-desc-garden",
+      "explanation": "The pond has \"orange fish\"."
+    },
+    {
+      "id": "q-r-descriptive-05",
+      "topic_id": "r-descriptive",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "How many desks are in the classroom?",
+      "options": [
+        "twenty",
+        "ten",
+        "four"
+      ],
+      "answer": "twenty",
+      "passage_id": "p-desc-classroom",
+      "explanation": "There are \"twenty desks in four rows\". Four is the number of rows."
+    },
+    {
+      "id": "q-r-descriptive-06",
+      "topic_id": "r-descriptive",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "reading_mcq",
+      "prompt": "What is on the front wall?",
+      "options": [
+        "a map and a TV",
+        "a door and a plant",
+        "a whiteboard and a clock"
+      ],
+      "answer": "a whiteboard and a clock",
+      "passage_id": "p-desc-classroom",
+      "explanation": "\"On the front wall, there is a whiteboard and a clock.\""
+    },
+    {
+      "id": "q-r-descriptive-07",
+      "topic_id": "r-descriptive",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "reading_mcq",
+      "prompt": "Where is the reading corner?",
+      "options": [
+        "in the playground",
+        "at the back of the classroom",
+        "at the front of the classroom"
+      ],
+      "answer": "at the back of the classroom",
+      "passage_id": "p-desc-classroom",
+      "explanation": "The text says the reading corner is \"at the back of the classroom\"."
+    },
+    {
+      "id": "q-l-daily-01",
+      "topic_id": "l-daily",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "listening_mcq",
+      "prompt": "Listen. What pet does Anna have?",
+      "options": [
+        "a rabbit",
+        "a dog",
+        "a cat"
+      ],
+      "answer": "a rabbit",
+      "tts_text": "Hello! My name is Anna. I have a pet rabbit. Its name is Snowy.",
+      "explanation": "Anna said, \"I have a pet rabbit.\""
+    },
+    {
+      "id": "q-l-daily-02",
+      "topic_id": "l-daily",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "listening_mcq",
+      "prompt": "Listen. What time does Tom wake up?",
+      "options": [
+        "at half past six",
+        "at seven o'clock",
+        "at six o'clock"
+      ],
+      "answer": "at six o'clock",
+      "tts_text": "Tom wakes up at six o'clock. He eats breakfast at half past six.",
+      "explanation": "Tom wakes up at six o'clock. Half past six is when he eats breakfast."
+    },
+    {
+      "id": "q-l-daily-03",
+      "topic_id": "l-daily",
+      "grade": 3,
+      "difficulty": 1,
+      "type": "listening_mcq",
+      "prompt": "Listen. What is the weather like today?",
+      "options": [
+        "snowy",
+        "rainy",
+        "sunny"
+      ],
+      "answer": "rainy",
+      "tts_text": "It is raining today, so please take your umbrella and wear your boots.",
+      "explanation": "The speaker said, \"It is raining today.\""
+    },
+    {
+      "id": "q-l-daily-04",
+      "topic_id": "l-daily",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "listening_mcq",
+      "prompt": "Listen. What is the speaker's favorite fruit?",
+      "options": [
+        "banana",
+        "strawberries",
+        "apple"
+      ],
+      "answer": "banana",
+      "tts_text": "My favorite fruit is the banana, but my sister loves strawberries.",
+      "explanation": "The speaker loves bananas. Strawberries are the sister's favorite."
+    },
+    {
+      "id": "q-l-daily-05",
+      "topic_id": "l-daily",
+      "grade": 3,
+      "difficulty": 2,
+      "type": "listening_mcq",
+      "prompt": "Listen. Which page should you open?",
+      "options": [
+        "page twenty",
+        "page two",
+        "page twelve"
+      ],
+      "answer": "page twelve",
+      "tts_text": "Please open your books to page twelve and read the first story.",
+      "explanation": "The teacher said \"page twelve\"."
+    },
+    {
+      "id": "q-g5-comparatives-01",
+      "topic_id": "g5-comparatives",
+      "grade": 5,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "An elephant is ___ than a horse.",
+      "options": [
+        "more big",
+        "bigger",
+        "biggest"
+      ],
+      "answer": "bigger",
+      "explanation": "Comparing two things with a short word: add \"-er\" (big → bigger) and use \"than\"."
+    },
+    {
+      "id": "q-g5-comparatives-02",
+      "topic_id": "g5-comparatives",
+      "grade": 5,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "Of all the students in my class, Rina is the ___.",
+      "options": [
+        "tallest",
+        "taller",
+        "most tall"
+      ],
+      "answer": "tallest",
+      "explanation": "Comparing one with the whole group: use \"the\" + \"-est\": the tallest."
+    },
+    {
+      "id": "q-g5-comparatives-03",
+      "topic_id": "g5-comparatives",
+      "grade": 5,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "For me, math is ___ than art.",
+      "options": [
+        "difficulter",
+        "most difficult",
+        "more difficult"
+      ],
+      "answer": "more difficult",
+      "explanation": "Long words use \"more\" to compare two things: more difficult than."
+    },
+    {
+      "id": "q-g5-comparatives-04",
+      "topic_id": "g5-comparatives",
+      "grade": 5,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "Today is the ___ day of the week so far. It is 36 degrees!",
+      "options": [
+        "most hot",
+        "hottest",
+        "hotter"
+      ],
+      "answer": "hottest",
+      "explanation": "Comparing one day with all the others: \"the hottest\". Double the \"t\": hot → hottest."
+    },
+    {
+      "id": "q-g5-comparatives-05",
+      "topic_id": "g5-comparatives",
+      "grade": 5,
+      "difficulty": 3,
+      "type": "mcq",
+      "prompt": "My test score was bad, but yours was even ___.",
+      "options": [
+        "worse",
+        "badder",
+        "worst"
+      ],
+      "answer": "worse",
+      "explanation": "\"Bad\" is irregular: bad → worse → worst. Comparing two scores needs \"worse\"."
+    },
+    {
+      "id": "q-g5-past-continuous-01",
+      "topic_id": "g5-past-continuous",
+      "grade": 5,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "I ___ TV when the phone rang.",
+      "options": [
+        "were watching",
+        "am watching",
+        "was watching"
+      ],
+      "answer": "was watching",
+      "explanation": "An action in progress in the past uses was/were + verb-ing. With \"I\" we use \"was\"."
+    },
+    {
+      "id": "q-g5-past-continuous-02",
+      "topic_id": "g5-past-continuous",
+      "grade": 5,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "They ___ football at 4 p.m. yesterday.",
+      "options": [
+        "are playing",
+        "were playing",
+        "was playing"
+      ],
+      "answer": "were playing",
+      "explanation": "\"Yesterday\" is past, and with \"they\" we use \"were\" + verb-ing."
+    },
+    {
+      "id": "q-g5-past-continuous-03",
+      "topic_id": "g5-past-continuous",
+      "grade": 5,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "What ___ you doing when the lights went out?",
+      "options": [
+        "were",
+        "was",
+        "are"
+      ],
+      "answer": "were",
+      "explanation": "With \"you\" we use \"were\": What were you doing?"
+    },
+    {
+      "id": "q-g5-past-continuous-04",
+      "topic_id": "g5-past-continuous",
+      "grade": 5,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "While Mom ___ dinner, Dad set the table.",
+      "options": [
+        "were cooking",
+        "is cooking",
+        "was cooking"
+      ],
+      "answer": "was cooking",
+      "explanation": "Cooking was in progress in the past. With one person (Mom) we use \"was\"."
+    },
+    {
+      "id": "q-g5-past-continuous-05",
+      "topic_id": "g5-past-continuous",
+      "grade": 5,
+      "difficulty": 3,
+      "type": "fill_blank",
+      "prompt": "Use the past continuous of \"rain\": It ___ when we left school, so we opened our umbrellas.",
+      "answer": "was raining",
+      "explanation": "Past continuous = was/were + verb-ing. \"It\" uses \"was\": it was raining."
+    },
+    {
+      "id": "q-g5-modals-01",
+      "topic_id": "g5-modals",
+      "grade": 5,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "It is the rule: you ___ wear a helmet when you ride a bike.",
+      "options": [
+        "may not",
+        "must",
+        "might"
+      ],
+      "answer": "must",
+      "explanation": "\"Must\" is for rules and things that are necessary."
+    },
+    {
+      "id": "q-g5-modals-02",
+      "topic_id": "g5-modals",
+      "grade": 5,
+      "difficulty": 1,
+      "type": "mcq",
+      "prompt": "Birds ___ fly, but penguins cannot.",
+      "options": [
+        "can",
+        "must",
+        "should"
+      ],
+      "answer": "can",
+      "explanation": "\"Can\" talks about ability — what someone is able to do."
+    },
+    {
+      "id": "q-g5-modals-03",
+      "topic_id": "g5-modals",
+      "grade": 5,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "The sky is very cloudy. It ___ rain later.",
+      "options": [
+        "mustn't",
+        "shouldn't",
+        "might"
+      ],
+      "answer": "might",
+      "explanation": "\"Might\" means something is possible but not sure."
+    },
+    {
+      "id": "q-g5-modals-04",
+      "topic_id": "g5-modals",
+      "grade": 5,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "You ___ eat so much candy. It is bad for your teeth.",
+      "options": [
+        "can",
+        "shouldn't",
+        "should"
+      ],
+      "answer": "shouldn't",
+      "explanation": "\"Shouldn't\" gives advice not to do something."
+    },
+    {
+      "id": "q-g5-modals-05",
+      "topic_id": "g5-modals",
+      "grade": 5,
+      "difficulty": 2,
+      "type": "mcq",
+      "prompt": "___ I borrow your pencil, please?",
+      "options": [
+        "May",
+        "Must",
+        "Should"
+      ],
+      "answer": "May",
+      "explanation": "\"May I…?\" is a polite way to ask for permission."
+    }
+  ]
+}
