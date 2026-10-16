@@ -20,6 +20,14 @@ describe('pack validation', () => {
     expect(r.pack.competitions.map((c) => c.grade).sort()).toEqual([3, 5]);
   });
 
+  it('accepts the full example in README.md', () => {
+    const readme = readFileSync('README.md', 'utf8');
+    const json = readme.match(/### Full example\n\n```json\n([\s\S]*?)```/)?.[1];
+    expect(json).toBeTruthy();
+    const r = validatePackText(json!);
+    expect(r.ok ? [] : r.issues).toEqual([]);
+  });
+
   it('accepts a minimal valid pack and defaults missing arrays', () => {
     const r = validatePack({ schema_version: 1, pack_id: 'p', pack_version: 1, title: 'P' });
     expect(r.ok).toBe(true);
